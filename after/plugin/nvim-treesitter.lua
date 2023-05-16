@@ -6,7 +6,8 @@ local opts = {
     "c",
     "lua",
     "vim",
-    "help",
+    -- "help",
+    "vimdoc",
 
     "bash",
     "cmake",
