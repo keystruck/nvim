@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------
---  pack.lua v. 20230510.1
+--  pack.lua v. 20230525.1
 --  packer.nvim config file
 --  Lives in ~/.config/nvim/lua
 --  https://github.com/wbthomason/packer.nvim
@@ -32,6 +32,7 @@ return require 'packer'.startup (
           run = pcall (vim.cmd, "MasonUpdate"),
         }
     use 'williamboman/mason-lspconfig.nvim'
+    use 'simrat39/rust-tools.nvim'
 
     -- requires nvim >= 0.5 --------------------------------------------------
     use 'wbthomason/packer.nvim'
