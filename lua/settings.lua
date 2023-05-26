@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------
---  settings.lua v. 20230509.1
+--  settings.lua v. 20230526.1
 --  General neovim options and settings
 --  Lives in ~/.config/nvim/lua
 ------------------------------------------------------------------------------
@@ -48,6 +48,7 @@ local options = {
 
   -- editor width
   colorcolumn     = '78',
+  signcolumn      = 'yes',
 
 }
 
