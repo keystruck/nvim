@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------
---  settings.lua v. 20230526.1
+--  settings.lua v. 20230528.1
 --  General neovim options and settings
 --  Lives in ~/.config/nvim/lua
 ------------------------------------------------------------------------------
@@ -24,9 +24,9 @@ local options = {
 
   -- whitespace
   expandtab	      = true,
-  shiftwidth	    = 2,
-  softtabstop	    = 2,
-  tabstop	        = 2,
+  shiftwidth	    = 4,
+  softtabstop	    = 4,
+  tabstop	        = 4,
 
   -- key lag
   timeoutlen      = 500,
