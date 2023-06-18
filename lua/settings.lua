@@ -50,6 +50,10 @@ local options = {
   colorcolumn     = '78',
   signcolumn      = 'yes',
 
+  -- easier cursor location
+  cursorline      = true,
+  cursorcolumn    = true,
+
 }
 
 --- Loop assignment ----------------------------------------------------------
