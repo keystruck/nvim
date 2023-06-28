@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------
---  dvorak.lua v.20230626.1
+--  dvorak.lua v.20230627.1
 --  Dvorak-friendly neovim remappings
 --  Lives in ~/.config/nvim/lua
 ------------------------------------------------------------------------------
@@ -40,7 +40,11 @@ local nox_modes = {
 }
 
 local ci_modes = {
-
+    -- use QWERTY <c-n>, <c-p>, <c-y> keys for menu navigation
+    {"<c-b>", "<c-n>", desc = "next menu item",          },
+    {"<c-l>", "<c-p>", desc = "previous menu item",      },
+    {"<c-f>", "<c-y>", desc = "accept current menu item",},
+    {"<c-z>", "<c-q>", desc = "exit menu",               },   -- =<c-q>
 }
 
 -- insert mode only
@@ -50,8 +54,8 @@ local i_mode = {
     {"<m-d>", "<c-d>", {desc = "dedent one shiftwidth",},},
 
     -- <c-d>, <c-v> deletes next (instead of prev) char/word
-    {"<c-d>", "<c-o>dl", {desc = "delete next char",},},
-    {"<c-v>", "<c-o>dw", {desc = "delete next word",},},
+    {"<c-d>", "<c-o>dl", {desc = "delete following char",},},
+    {"<c-v>", "<c-o>dw", {desc = "delete following word",},},
 }
 
 local n_mode = {
